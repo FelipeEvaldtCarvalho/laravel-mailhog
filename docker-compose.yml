@@ -1,0 +1,18 @@
+version: "3.7"
+services:
+
+  smtp:
+    #platform: linux/x86_64
+    image: mailhog/mailhog
+    container_name: laravel-mailhog-smtp
+    logging:
+      driver: 'none'
+    ports:
+      - "8003:1025"
+      - "8100:8025"
+    networks:
+      - laravel_mailhog_network
+
+networks:
+  laravel_mailhog_network:
+    driver: bridge
