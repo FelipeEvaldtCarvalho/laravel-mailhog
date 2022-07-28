@@ -1,7 +1,7 @@
 version: "3.7"
 services:
 
-  smtp:
+  mailhog:
     #platform: linux/x86_64
     image: mailhog/mailhog
     container_name: laravel-mailhog-smtp
