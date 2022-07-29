@@ -40,6 +40,7 @@ MAIL_PORT=1025
 MAIL_USERNAME=''
 MAIL_PASSWORD=''
 MAIL_ENCRYPTION=null
+MAIL_ADDRESS=''
 ```
 
 # More information:
